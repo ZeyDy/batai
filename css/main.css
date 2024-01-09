@@ -24,6 +24,52 @@ header.container {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+    max-width: 500px;
+    min-width: 200px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 40px);
+    transform: translateY(-50%);
+}
+.about > a {
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+}
+.about > h1 {
+    font-size: 60px;
+    color: red;
+}
+.about > p {
+    color: gray;
+    font-size: 24px;
+}
+.about > a > span {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: red;
+}
+.about > a > .fa-solid {
+    padding: 12px;
+    background-color: black;
+}
+.about > div {
+    font-size: 30px;
+}
+.number {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    font-size: 150px;
+    color: #f005;
+}
 .logo {
     height: 60px;
     margin-right: auto;
@@ -51,5 +97,51 @@ nav > a.active {
 }
 main.container {
     height: calc(100vh - 120px);
-    background-color: yellow;
+    position: relative;
+    background-image: url(../img/adidasbatai.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.socials {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.socials > .fa-brands {
+    text-align: center;
+    line-height: 28px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+}
+.pagination > .top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.pagination > .bar {
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    background-color: #f005;
+}
+.pagination > .bar > .value {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background-color: #f00;
 }
